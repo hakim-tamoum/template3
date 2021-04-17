@@ -1,0 +1,461 @@
+/* ---------- general ---------- */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body { font-family: Oswald arail cursive}
+
+
+
+
+
+
+
+/* ---------- framework ---------  */
+.container { width: 1100px; margin: auto; position: relative}
+
+.overly {background-color: rgba(49, 55, 61, 0.7); width: 100%; height: 100%}
+
+.table { height: 100%; display: table}
+
+.table-row { display: table-row}
+
+.text-center { text-align: center}
+
+.upper { text-transform: uppercase}
+
+.main-color { color: #f7600e}
+
+.main-background { background-color: #f7600e}
+
+i:hover {color:#f7600e}
+
+.clearfix { clear: both}
+
+.hidden {display: none}
+
+
+
+
+
+/*  ---------- header  ----------  */
+.header {
+    background: url('../img/header..jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff
+}
+.header .navbar { 
+    overflow: hidden;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+.header .navbar .links { float: right}
+
+.header .navbar .links i { margin-left: 5px; cursor: pointer }
+
+.header .intro h1 { margin: 0; font-weight: 700; font-size: 50px}
+.header .intro p {
+    margin: 15px 0 60px;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #ccc;
+}
+.header .buttons button {
+    background: transparent;
+    padding: 7px 0;
+    width: 140px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: #eee;
+    box-shadow: 3px 2px 2px #777;
+}
+.header .buttons button:hover {
+    background-color: #f7600e;
+    color: #fff;
+    border: 1px solid #f7600e;
+    box-shadow: none
+}
+.header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.header .arrow i {
+    border: 2px solid #ccc;
+    border-radius: 50%; 
+    width: 33px;
+    height: 33px;
+    line-height: 33px
+}
+.header .arrow i:hover {border: 1px solid #f7600e}
+
+/*-------------- feactures ----------- */
+
+.features .box {
+    float: left;
+    width: 22%;
+    padding: 60px 0;
+    margin-right: 4%
+}
+.features .box:last-child{margin-right: 0}
+.features .box i {
+    font-size: 35px;
+    color: #f7600e;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.features .box i:hover { background-color:#f7600e; border: 2px solid #f7600e; color: #fff}
+
+.features .box h3 {text-transform: uppercase; font-weight: normal; color: #444}
+
+.features .box p {color: #777; line-height: 1.7}
+
+
+
+
+
+
+
+
+/*-------------- subscribe ----------- */
+
+.subscribe { 
+    background: url('../img/subscribe.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.subscribe form { padding: 110px 0; width: 500px; margin: auto }
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    font-size: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.subscribe button {
+    padding: 10px;
+    width: 130px;
+    font-size: 20px;
+    background-color: #f7600e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+
+
+
+
+
+/*-------------- Our Work ----------- */
+.our-work {padding: 50px 0;margin: 0 }
+
+.our-work h2 {margin: 0; font-size: 30px; font-weight: 500}
+
+.our-work p {line-height: 1.6; margin: 10px 0 40px;color: #444}
+
+.our-work .item-box {overflow: hidden; margin-bottom: 20px }
+
+.our-work .item-box .item {
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1.3333%;
+    margin-bottom: 12px;
+    position: relative;
+    height: 334px
+}
+.our-work .item-box .item .over {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 96, 14, .7);
+    color: #fff;
+    border-radius: 15px;
+    display: none;
+}
+.our-work .item-box .item:hover .over {display: block}
+
+.our-work .item .over h4 {
+    padding: 80px 0 0px; 
+    font-size: 22px;
+    margin: 0
+}
+.our-work .item-box .item:hover p {color: #fff}
+.our-work .item .over button {
+    padding: 7px 0;
+    width: 140px;
+    font-size: 15px;
+    border: 1px solid rgba(247, 96, 14, .5);
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #f7600e;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+.our-work .item .over button:hover {
+    background-color: rgba(247, 96, 14, .7);
+    color: #fff;
+    border: 1px solid #fff;
+    
+}
+.our-work .item-box .item img{width: 100%;border-radius: 15px }
+
+.our-work .show-more {
+    background: transparent;
+    padding: 7px 0;
+    width: 140px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    color: #444
+}
+.our-work .show-more:hover {
+    background-color: #f7600e;
+    color: #fff;
+    border: 1px solid #f7600e
+}
+
+
+
+/*-------------- testimonials ----------- */
+.testimonials {
+    background: url('../img/testimonails.jpg');-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.testimonials .client {
+    padding: 50px 0;
+    color: #fff;
+}
+.testimonials .client img {
+    border-radius: 50%;
+    width: 100px;
+}
+.testimonials .client p {
+    line-height: 1.9;
+    font-style: italic;
+    font-size: 20px
+}
+.testimonials .client span {font-weight: bold; font-size: 18px}
+.testimonials .fa-chevron-right,
+.testimonials .fa-chevron-left {
+    position: absolute;
+    top: 50%;
+    color: #ccc;
+    cursor: pointer
+}
+.testimonials .fa-chevron-right:hover,
+.testimonials .fa-chevron-left:hover {
+    color: #f7600e
+}
+.testimonials .fa-chevron-right {
+    right: 0;
+}
+.testimonials .fa-chevron-left {
+    left: 0;
+}
+
+
+
+/* ------------- our-team -----------*/
+.our-team {padding: 30px 0 }
+
+.our-team h2 {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500
+}
+.our-team p {line-height: 1.6; margin: 10px 0 20px; color: #888}
+.our-team {overflow: hidden}
+.our-team .the-team .person {
+    float: left;
+    width: 23%;
+    height: 450px;
+    margin-left: 2%;
+    color: #888;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px 7px #ddd;
+    border-radius: 8px;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+.our-team .the-team .person:hover {
+    box-shadow:  7px 7px 10px #ccc,
+                 10px 10px 10px #bbc;
+    transform: matrix(1.07, 0, 0, 1.07, -7, 7);
+}
+.our-team .the-team .person img {
+    width: 100%;
+    height: 270.44px;
+    border-radius: 8px 8px 0 0;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.our-team .the-team .person p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+    padding: 20px 10px;
+    line-height: 1.6
+}
+.our-team .the-team .person i {
+    background-color: #888;
+    border: none;
+    border-radius: 50%; 
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+    margin: 3px 
+}
+.our-team .the-team .person:hover {background-color: #ccc}
+
+.our-team .the-team .person:hover h3 { color: #222}
+
+.our-team .the-team .person:hover p {color: #444}
+
+.our-team .the-team .person:hover .fa-facebook-f {background-color: #3b5998}
+
+.our-team .the-team .person:hover .fa-twitter {background-color: #1da1f2}
+
+.our-team .the-team .person:hover .fa-linkedin-in {background-color: #00a0dc}
+
+.our-team .the-team .person:hover img{ filter: none;-webkit-filter: none;}
+
+.our-team .the-team .person:hover i {cursor: pointer}
+
+
+
+
+/*-------------- contact ----------- */
+.contact {
+    background: url('../img/contact.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contact .overly {padding: 30px 0 }
+
+.contact h2 { font-size: 35px; color: #ddd}
+
+.contact p{ color: #ccc}
+
+.contact form {
+    width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden
+}
+.contact form input[type="email"],
+.contact form input[type="text"] {
+    width: 45%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    background-color: rgba(250, 250, 250, .2)
+}
+
+.contact form input[type="text"] {float: left}
+
+.contact form input[type="email"] {float: right}
+
+.contact form textarea {
+    margin: 20px 0;
+    width: 100%;
+    height: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    background-color: rgba(250, 250, 250, .2)   
+}
+
+.contact form .icons {float: right; font-size: 25px;color: rgba(250, 250, 250, .5)}
+
+.contact form button {
+    background: rgba(247, 96, 14, .4);
+    padding: 7px 0;
+    width: 140px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #eee;
+    float: left;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.contact form button:hover {background-color: #f7600e; color: #fff}
+
+
+
+
+/*-------------- footer ----------- */
+.footer { background-color: #3b434c; color: #eee; overflow: hidden; padding: 30px 0}
+
+.footer .copyright {float: left}
+
+.footer .design {float: right}
+
+
+
+
+
