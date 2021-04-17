@@ -1,2 +1,2 @@
 # template3
-Deployment: https://github.com/hakim-tamoum/template3/blob/master/index.html
+Deployment: https://hakim-tamoum.github.io/template3/
