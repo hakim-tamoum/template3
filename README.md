@@ -1,2 +1,2 @@
 # template3
-Deployment: 
+Deployment: https://hakim-tamoum.github.io/template3/
