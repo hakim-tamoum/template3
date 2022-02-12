@@ -1,6 +1,13 @@
 $(function() { 
     "use strict";
-    
+    // landing page
+    let hdr = document.querySelector(".header");
+    let pageImg = ['img0.jpg', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg'];
+    setInterval( () => {
+        let nbr = Math.floor(Math.random()*pageImg.length);
+        hdr.style.backgroundImage = `url('../img/${pageImg[nbr]}')`;
+    }, 4000);
+
     // scroll plugin
     $("html").niceScroll(
     {cursorcolor: "#f7600e",cursorborder: "1px solid #f7600e"

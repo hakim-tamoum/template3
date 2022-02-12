@@ -26,15 +26,11 @@ body { font-family: Oswald arail cursive}
 
 .upper { text-transform: uppercase}
 
-.main-color { color: #f7600e}
-
-.main-background { background-color: #f7600e}
-
-i:hover {color:#f7600e}
-
 .clearfix { clear: both}
 
 .hidden {display: none}
+
+:root{ --main-color : #f7600e;}
 
 
 
@@ -42,12 +38,14 @@ i:hover {color:#f7600e}
 
 /*  ---------- header  ----------  */
 .header {
-    background: url('../img/header..jpg');
+    background: url('../img/img0.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #fff
+    color: #fff;
+    transition: all 2s ease-in-out;
+    min-height: 100vh;
 }
 .header .navbar { 
     overflow: hidden;
@@ -57,13 +55,24 @@ i:hover {color:#f7600e}
     left: 0;
     width: 100%
 }
+.header .navbar span{color: var(--main-color);}
+.header .navbar h3{margin: 0;}
 .header .navbar .links { float: right}
 
-.header .navbar .links i { margin-left: 5px; cursor: pointer }
+.header .navbar .links i { margin-left: 5px; cursor: pointer; color: var(--main-color);}
+
+.header .intro{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 .header .intro h1 { margin: 0; font-weight: 700; font-size: 50px}
+.header .intro h1 span{color: var(--main-color);}
 .header .intro p {
-    margin: 15px 0 60px;
     font-size: 20px;
     line-height: 1.9;
     color: #ccc;
@@ -85,9 +94,9 @@ i:hover {color:#f7600e}
     box-shadow: 3px 2px 2px #777;
 }
 .header .buttons button:hover {
-    background-color: #f7600e;
+    background-color: var(--main-color);
     color: #fff;
-    border: 1px solid #f7600e;
+    border: 1px solid var(--main-color);
     box-shadow: none
 }
 .header .arrow {
@@ -107,7 +116,10 @@ i:hover {color:#f7600e}
     height: 33px;
     line-height: 33px
 }
-.header .arrow i:hover {border: 1px solid #f7600e}
+.header .arrow i:hover {border: 1px solid var(--main-color)}
+
+
+
 
 /*-------------- feactures ----------- */
 
@@ -120,7 +132,7 @@ i:hover {color:#f7600e}
 .features .box:last-child{margin-right: 0}
 .features .box i {
     font-size: 35px;
-    color: #f7600e;
+    color: var(--main-color);
     border: 2px solid #ccc;
     border-radius: 50%;
     width: 90px;
@@ -131,7 +143,7 @@ i:hover {color:#f7600e}
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-.features .box i:hover { background-color:#f7600e; border: 2px solid #f7600e; color: #fff}
+.features .box i:hover { background-color:var(--main-color); border: 2px solid var(--main-color); color: #fff}
 
 .features .box h3 {text-transform: uppercase; font-weight: normal; color: #444}
 
@@ -167,7 +179,7 @@ i:hover {color:#f7600e}
     padding: 10px;
     width: 130px;
     font-size: 20px;
-    background-color: #f7600e;
+    background-color: var(--main-color);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -203,7 +215,7 @@ i:hover {color:#f7600e}
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(247, 96, 14, .7);
+    background: #f7600eb3;
     color: #fff;
     border-radius: 15px;
     display: none;
@@ -220,11 +232,11 @@ i:hover {color:#f7600e}
     padding: 7px 0;
     width: 140px;
     font-size: 15px;
-    border: 1px solid rgba(247, 96, 14, .5);
+    border: 1px solid #f7600e80;
     border-radius: 5px;
     margin: 0 10px;
     cursor: pointer;
-    color: #f7600e;
+    color: var(--main-color);
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -232,7 +244,7 @@ i:hover {color:#f7600e}
     
 }
 .our-work .item .over button:hover {
-    background-color: rgba(247, 96, 14, .7);
+    background-color: #f7600eb3;
     color: #fff;
     border: 1px solid #fff;   
 }
@@ -254,16 +266,17 @@ i:hover {color:#f7600e}
     color: #444
 }
 .our-work .show-more:hover {
-    background-color: #f7600e;
+    background-color: var(--main-color);
     color: #fff;
-    border: 1px solid #f7600e
+    border: 1px solid var(--main-color)
 }
 
 
 
 /*-------------- testimonials ----------- */
 .testimonials {
-    background: url('../img/testimonails.jpg');-webkit-background-size: cover;
+    background: url('../img/testimonails.jpg');
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover
@@ -291,7 +304,7 @@ i:hover {color:#f7600e}
 }
 .testimonials .fa-chevron-right:hover,
 .testimonials .fa-chevron-left:hover {
-    color: #f7600e
+    color: var(--main-color)
 }
 .testimonials .fa-chevron-right {
     right: 0;
@@ -442,7 +455,7 @@ i:hover {color:#f7600e}
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-.contact form button:hover {background-color: #f7600e; color: #fff}
+.contact form button:hover {background-color: var(--main-color); color: #fff}
 
 
 
